@@ -16,7 +16,7 @@ class SideNav extends Component {
       <div className="TopNav-Buttons">
       <h3>My Company</h3>
       <h3>Messages</h3>
-      <img height="100"src={menu}/>
+      <img src={menu}/>
       </div>
       </div>
       <div className="SideNav">
