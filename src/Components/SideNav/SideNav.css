@@ -1,0 +1,66 @@
+.SideNav {
+  height: 100vh;
+  width: 150px;
+  background: linear-gradient(#41C9A9, #34A7C1);
+  position: fixed;
+  left: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.SideNav-Icons {
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+}
+
+.SideNav-Icons img {
+  margin-top: 25px;
+  height: 55px;
+}
+
+.TopNav {
+  height: 40px;
+  width: 100%;
+  background: #41C9A9;
+  display: flex;
+}
+
+.TopNav-Display {
+  background: linear-gradient(to left,gray, silver);
+  width: 230%;
+  margin-left: 150px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.TopNav-Display h3 {
+  color: white;
+  letter-spacing: 1.5px;
+  padding: 0;
+  margin: 0;
+  margin-left: 25px;
+}
+
+.TopNav-Buttons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.TopNav-Buttons h3 {
+  font-size: 11px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.TopNav-Buttons img {
+  height: 20px;
+  color: white;
+}
