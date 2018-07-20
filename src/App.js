@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SideNav from './Components/SideNav/SideNav';
-import Message from './Components/Message/Message';
 import Switch from '@material-ui/core/Switch';
 import './App.css';
 
@@ -15,15 +14,15 @@ class App extends Component {
       phoneNumber: '',
       checkedB: false,
     }
-    this.handleChange = this.handleChange.bind(this)
-    this.slider = this.slider.bind(this)
+    this.handleChange = this.handleChange.bind(this);
+    this.slider = this.slider.bind(this);
   }
 
   handleChange(e){
     this.setState({
         [e.target.name]: e.target.value,
     });
-  }
+  };
 
   slider = name => event => {
     this.setState({ [name]: event.target.checked });
@@ -31,8 +30,9 @@ class App extends Component {
 
   render() {
     return (
+
       <div className="App">
-      {/* <SideNav/>
+      <SideNav/>
       <div className="settings-container">
       <div className="settings-text">
       <div className="toggle">
@@ -44,6 +44,7 @@ class App extends Component {
           color="default"
         />
         </div>
+
       <p>How many days do you want to pass before a notification is sent?</p>
       <input id="days-counter" name="notificationDays" value={this.state.notificationDays} onChange={this.handleChange} type="number"/>
       <h4>Emails</h4>
@@ -55,8 +56,7 @@ class App extends Component {
       <p>Enter your cell phone number to receive texts from loop minded.</p>
       <input className="email-field" placeholder="Cell Number:" name="phoneNumber" value={this.state.phoneNumber} onChange={this.handleChange} type="text"/>
       </div>
-      </div> */}
-      <Message/>
+      </div>
       </div>
     );
   }

@@ -1,10 +1,10 @@
 .Message {
-  width: 35%;
-  height: 85vh;
+  width: 30%;
+  height: 95vh;
   border: 1px solid #34A7C1;
-  margin-left: 20px;
-  margin-top: 20px;
-  position: relative;
+  background: white;
+  position: absolute;
+  right: 0;
 }
 
 .top-bar {
@@ -22,6 +22,10 @@
   height: 20px;
   width: 20px;
   margin: 0 10px;
+}
+
+#exit-button {
+  cursor: pointer;
 }
 
 .compose {
@@ -58,8 +62,17 @@
 
 .message-input input {
   width: 80%;
+  height: 20px;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  background-color: white;
+  background: url('../../Assets/submit.png') no-repeat 7px 0px;
+  background-size: 18px;
+  background-position: right;
+}
+
+input[type="text"] {
+  background-color: white;
 }

@@ -64,3 +64,20 @@
   height: 20px;
   color: white;
 }
+
+.TopNav-Buttons span {
+  font-size: 12px;
+  text-transform: none;
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.Nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#message {
+  cursor: pointer;
+}
